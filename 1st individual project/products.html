@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products | Brew Haven</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <div class="logo">Brew Haven</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Products Hero -->
+    <section class="products-hero">
+        <div class="hero-overlay">
+            <h1>Our Premium Blends</h1>
+            <p>Ethically sourced, expertly roasted</p>
+        </div>
+    </section>
+
+    <!-- Product Categories -->
+    <section class="product-categories">
+        <div class="container">
+            <div class="category-tabs">
+                <button class="cat-btn active" data-category="beans">Coffee Beans</button>
+                <button class="cat-btn" data-category="ground">Ground Coffee</button>
+                <button class="cat-btn" data-category="merch">Merchandise</button>
+            </div>
+
+            <!-- Coffee Beans -->
+            <div class="products-grid" id="beans">
+                <div class="product-card">
+                    <img src="images/arabica-beans.jpg" alt="Arabica Beans">
+                    <div class="product-info">
+                        <h3>Arabica Blend</h3>
+                        <p class="desc">Smooth with floral notes</p>
+                        <p class="price">₹1,200 <span>/ 500g</span></p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="images/espresso-beans.jpg" alt="Espresso Beans">
+                    <div class="product-info">
+                        <h3>Espresso Blend</h3>
+                        <p class="desc">Rich and full-bodied</p>
+                        <p class="price">₹1,400 <span>/ 500g</span></p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ground Coffee -->
+            <div class="products-grid hidden" id="ground">
+                <div class="product-card">
+                    <img src="images/filter-ground.jpg" alt="Filter Ground">
+                    <div class="product-info">
+                        <h3>Filter Blend</h3>
+                        <p class="desc">Perfect for drip brewing</p>
+                        <p class="price">₹1,000 <span>/ 250g</span></p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Merchandise -->
+            <div class="products-grid hidden" id="merch">
+                <div class="product-card">
+                    <img src="images/coffee-mug.jpg" alt="Ceramic Mug">
+                    <div class="product-info">
+                        <h3>Ceramic Mug</h3>
+                        <p class="desc">Handcrafted with our logo</p>
+                        <p class="price">₹600</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="images/coffee-kit.jpg" alt="Brewing Kit">
+                    <div class="product-info">
+                        <h3>Brewing Kit</h3>
+                        <p class="desc">Everything you need</p>
+                        <p class="price">₹2,500</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Brew Haven. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
